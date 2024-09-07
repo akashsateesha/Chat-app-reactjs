@@ -1,0 +1,129 @@
+.chat-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: none;
+    background-color: var(--black);
+}
+
+.contacts-pannel {
+    width: 30%;
+    padding: 1em;
+    border-right: 0.5em solid var(--yellow);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.contacts-pannel::-webkit-scrollbar {
+    width: 6px;
+    cursor: pointer;
+}
+
+.contacts-pannel::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+.message-container {
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--yellow);
+    color: var(--gray);
+    /* position: sticky;
+    top: 0; */
+}
+
+.active-contact {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.chat-profile-img {
+    height: 8.8vh;
+    width: 4vw;
+    border-radius: 50%;
+    border: 0.1em solid var(--yellow);
+    margin-right: 0.3em;
+}
+
+.search {
+    margin: 1em 0;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+}
+
+.search-input {
+    width: 95%;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    color: var(--yellow);
+    border: none;
+}
+
+.search-input:focus {
+    outline: 0.1em solid var(--yellow);
+}
+
+.search-input::placeholder {
+    color: var(--yellow);
+}
+
+.wrapper {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    border: 1px solid var(--yellow);
+}
+
+.message-header{
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.message-input-container{
+    width: 96.5%;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-input{
+    width: 80%;
+    padding: 0.651em 0.5em;
+    border: none;
+    border-radius: 0.5em 0 0 0.5em;
+    color: var(--black);
+}
+
+.message-input:focus{
+    outline: none;
+}
+
+.message-send-button{
+    padding: 0.5em;
+    color: var(--black);
+    background-color: var(--yellow);
+    border: none;
+    outline: none;
+    border-radius: 0 0.5em 0.5em 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}

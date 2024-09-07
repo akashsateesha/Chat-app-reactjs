@@ -1,0 +1,29 @@
+.contact-container{
+    width: 94%;
+    color: var(--yellow);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.8em 0;
+    padding: 0.2em;
+    border-bottom: 0.1em solid var(--yellow);
+    border-left: 1em solid var(--yellow);
+    cursor: pointer;
+}
+
+.conatct-details-container{
+    margin-left: 0.5em;
+    width: 100%;
+}
+
+.contact-name{
+    font-size: 1.5rem;
+    color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-msg-time{
+    text-align: end;
+}
